@@ -1,0 +1,123 @@
+.gallery {
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+.gallery__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery__title {
+    margin-bottom: 20px;
+    color: var(--white);
+    font-size: 52px;
+    text-align: center;
+    font-weight: 200;
+    line-height: 62px;
+    letter-spacing: .3px;
+}
+
+.gallery__descr {
+    max-width: 447px;
+    margin-bottom: 54px;
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    letter-spacing: .3px;
+}
+
+.gallery__img-wrapper {
+    margin-bottom: 49px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 39px;
+}
+
+.gallery__img {
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.gallery__img-549 {
+    display: none;
+}
+
+.gallery__img:hover {
+    transform: scale(1.1);
+}
+
+.gallery__btn {
+    height: 50px;
+    padding: 0 37px;
+    border: 1px solid var(--white);
+    border-radius: 0;
+    font-size: 17px;
+    font-weight: 100;   
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease-out;
+}
+
+.gallery__btn:hover {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.gallery__btn:focus {
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+/* Adaptive */
+
+@media (max-width: calc(1579px - 1px)) {
+    .gallery {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 549px) {
+    .gallery {
+        padding-top: 78px;
+        padding-bottom: 100px;
+    }
+
+    .gallery__img-wrapper {
+        gap: 30px;
+    }
+
+    .gallery__img {
+        display: none;
+    }
+
+    .gallery__img-549 {
+        display: inline-block;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: calc(549px - 1px)) {
+    .gallery {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .gallery__title {
+        font-size: 45px;
+        font-weight: 100;
+    }
+
+    .gallery__descr {
+        font-size: 17px;
+        font-weight: 100;
+    }
+
+    .gallery__img-549 {
+        max-width: 85%;
+    }
+}

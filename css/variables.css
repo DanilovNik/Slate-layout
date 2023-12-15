@@ -1,0 +1,14 @@
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --light-grey: #d3d3d3;
+    --medium-grey: #dedede;
+    --dark-grey: #5c5c5c;
+    --sky-blue: #4179cc;
+
+    --dark-background: #181818;
+    --primary: #4452fe;
+    --secondary: #02e4c0;
+    --pink: rgb(232,54,181);
+}

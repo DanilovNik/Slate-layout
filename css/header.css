@@ -1,0 +1,144 @@
+.header {
+    padding-bottom: 90px;
+}
+
+.header__content {
+    padding: 33px 41px 40px 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 142px;
+    height: 40px;
+}
+
+.header__list {
+    gap: 51px;
+    display: flex;
+}
+
+.header__nav-link {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__nav-link:focus {
+    outline: none;
+}
+
+.header__nav-link:after {
+    display: block;
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #af24af;
+    transition: 0.3s ease-out;
+}
+
+.header__nav-link:hover:after,
+.header__nav-link:focus:after {
+    width: 100%;
+}
+
+.header__btn {
+    height: 50px;
+    padding: 0 46px;
+    border: 1px solid var(--white);
+    border-radius: 0;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    transition: 0.3s ease-out;
+}
+
+.header__btn:hover {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.header__btn:focus {
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+/* Adaptive */
+
+@media (max-width: calc(1579px - 1px)) {
+    .header {
+        padding-bottom: 60px;
+    }
+
+    .header__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__logo {
+        order: 1;
+        margin-right: auto;
+    }
+
+    .header__btn {
+        order: 2;
+    }
+
+    .header__nav {
+        order: 3;
+        display: flex;
+        align-content: center;
+        padding-top: 40px;
+    }
+  }
+
+  @media (max-width: 890px) {
+    .header {
+        padding-bottom: 20px;
+    }
+
+    .header__container {
+        max-width: 540px;
+    }
+
+    .header__content {
+        padding: 20px;
+    }
+  }
+
+  @media (max-width: 549px) {
+    .header__content {
+        padding: 28px 1px 60px 21px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+  }
+
+  @media (max-width: calc(549px - 1px)) {
+    .header {
+        padding-bottom: 10px;
+    }
+
+    .header__logo {
+        width: 114px;
+        height: 32px;
+    }
+
+    .header__btn {
+        height: 36px;
+        padding: 0 12px;
+        font-weight: 200;
+    }
+}
+

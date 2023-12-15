@@ -1,0 +1,137 @@
+.partners {
+    padding-top: 111px;
+    padding-bottom: 100px;
+}
+
+.partners__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners__title {
+    margin-bottom: 20px;
+    color: var(--white);
+    font-size: 52px;
+    text-align: center;
+    font-weight: 200;
+    line-height: 62px;
+    letter-spacing: .9px;
+}
+
+.partners__descr {
+    max-width: 506px;
+    margin-bottom: 64px;
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    letter-spacing: .3px;
+}
+
+.partners__list {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 73px;
+}
+
+.partners__list-link:focus {
+    outline: none;
+}
+  
+.partners__list-link:focus svg {
+    outline: 3px solid var(--secondary);
+    outline-offset: 5px;
+}
+
+.partners__btn {
+    height: 50px;
+    padding: 0 37px;
+    border: 1px solid var(--white);
+    border-radius: 0;
+    font-size: 17px;
+    font-weight: 100;   
+    line-height: 25px;
+    transition: 0.3s ease-out;
+}
+
+.partners__btn:hover {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.partners__btn:focus {
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+/* Adaptive */
+
+@media (max-width: calc(1579px - 1px)) {
+    .partners {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    .partners__list {
+        margin-bottom: 60px;
+    }
+
+    .partners__list {
+        justify-content: center;
+    }
+
+    .partners__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 549px) {
+    .partners {
+        padding-top: 109px;
+        padding-bottom: 100px;
+    }
+
+    .partners__list {
+        max-width: 286px;
+        margin-bottom: 39px;
+        gap: 50px;
+    }
+
+    #basecamp {
+        width: 56px;
+        height: 46px;
+    }
+
+    #airbnb {
+        width: 47px;
+        height: 51px;
+    }
+
+    #ibm {
+        width: 83px;
+        height: 33px;
+    }
+
+    .partners__btn {
+        padding: 0 39px;
+    }
+}
+
+@media (max-width: calc(549px - 1px)) {
+    .partners {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .partners__title {
+        font-size: 45px;
+        font-weight: 100;
+    }
+
+    .partners__descr {
+        font-size: 17px;
+        font-weight: 100;
+    }
+}
