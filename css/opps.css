@@ -4,9 +4,16 @@
 }
 
 .opps__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .opps__title {
@@ -31,6 +38,8 @@
 }
 
 .opps__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
 }
@@ -42,13 +51,22 @@
 .opps__wrapper-list {
     padding: 2px 30px 20px 2px;
     max-width: 309px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 45px;
 }
 
 .opps__wrapper-title-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 31px;
 }
@@ -83,8 +101,13 @@
     }
 
     .opps__wrapper {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .opps__img {
@@ -94,8 +117,13 @@
     .opps__wrapper-list {
         padding: 0;
         max-width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding-top: 25px;
     }
 }
@@ -106,12 +134,15 @@
     }
 
     .opps__wrapper-list {
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            align-items: center;
     }
 }
 
-@media (max-width: 549px) {
+@media (max-width: 721px) {
     .opps {
         padding-top: 77px;
         padding-bottom: 100px;
@@ -123,6 +154,10 @@
 
     .opps__img {
         width: 103%;
+    }
+
+    .opps__wrapper-list {
+            justify-content: center;
     }
 }
 
