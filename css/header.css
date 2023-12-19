@@ -80,6 +80,7 @@
 
 .header__btn {
     display: flex;
+    align-items: center;
     padding: 13px 46px;
     border: 1px solid var(--white);
     border-radius: 0;

@@ -96,6 +96,7 @@
 
 .extensions__wrapper-btn-left {
     display: flex;
+    align-items: center;
     padding: 15px 45px;
     margin-bottom: 56px;
     background-color: var(--primary);
@@ -128,6 +129,7 @@
 
 .extensions__wrapper-btn-right {
     display: flex;
+    align-items: center;
     padding: 15px 44px;
     margin-bottom: 3px;
     background-color: var(--primary);

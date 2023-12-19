@@ -61,6 +61,7 @@
 
 .hero__button-blue {
     display: flex;
+    align-items: center;
     padding: 18px 38px;
     background-color: var(--primary);
     border: 1px solid var(--primary);
@@ -93,6 +94,7 @@
 
 .hero__button-black {
     display: flex;
+    align-items: center;
     padding: 18px 42px;
     border: 1px solid var(--white);
     border-radius: 0;
