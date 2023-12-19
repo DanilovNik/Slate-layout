@@ -79,8 +79,8 @@
 }
 
 .header__btn {
-    height: 50px;
-    padding: 0 46px;
+    display: flex;
+    padding: 13px 46px;
     border: 1px solid var(--white);
     border-radius: 0;
     font-size: 17px;

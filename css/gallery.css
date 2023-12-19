@@ -68,6 +68,7 @@
 }
 
 .gallery__btn {
+    display: flex;
     padding: 16px 37px;
     border: 1px solid var(--white);
     border-radius: 0;

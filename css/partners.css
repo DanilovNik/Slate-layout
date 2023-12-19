@@ -66,9 +66,13 @@
     outline-offset: 5px;
 }
 
+.partners__list-link:active svg {
+    filter: blur(6px);
+}
+
 .partners__btn {
-    height: 50px;
-    padding: 0 37px;
+    display: flex;
+    padding: 16px 37px;
     border: 1px solid var(--white);
     border-radius: 0;
     font-size: 17px;
@@ -147,7 +151,7 @@
     }
 
     .partners__btn {
-        padding: 0 39px;
+        padding: 16px 39px;
     }
 }
 

@@ -91,6 +91,7 @@
     -webkit-transition: color .3s ease-in-out;
     -o-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
+    cursor: pointer;
 }
 
 .footer__right-group-address svg {
@@ -112,6 +113,7 @@
     -webkit-transition: color .3s ease-in-out;
     -o-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
+    cursor: pointer;
 }
 
 .footer__right-group-tel svg {
@@ -128,7 +130,6 @@
     font-weight: 200;
     line-height: 24px;
     letter-spacing: 0.2px;
-    cursor: pointer;
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
@@ -140,7 +141,6 @@
     font-weight: 200;
     line-height: 24px;
     letter-spacing: 0.2px;
-    cursor: pointer;
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
@@ -170,12 +170,18 @@
     color: var(--pink);
 }
 
-.footer__right-address:active {
-    color: var(--secondary);
+.footer__right-group-address:active,
+.footer__right-group-address:active svg,
+.footer__right-group-address:active a {
+    color: var(--pink);
+    fill: var(--pink);
 }
 
-.footer__right-tel:active {
-    color: var(--secondary);
+.footer__right-group-tel:active,
+.footer__right-group-tel:active svg,
+.footer__right-group-tel:active a {
+    color: var(--pink);
+    fill: var(--pink);
 }
 
 .footer__right-social-list {
