@@ -68,8 +68,7 @@
 }
 
 .gallery__btn {
-    height: 50px;
-    padding: 0 37px;
+    padding: 16px 37px;
     border: 1px solid var(--white);
     border-radius: 0;
     font-size: 17px;
@@ -87,8 +86,15 @@
 }
 
 .gallery__btn:focus-visible {
+    outline: none;
     color: var(--pink);
     border: 1px solid var(--pink);
+}
+
+.gallery__btn:active {
+    color: var(--white);
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
 }
 
 /* Adaptive */

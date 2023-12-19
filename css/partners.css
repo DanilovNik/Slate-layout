@@ -89,6 +89,12 @@
     border: 1px solid var(--pink);
 }
 
+.partners__btn:active {
+    color: var(--white);
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
+}
+
 /* Adaptive */
 
 @media (max-width: calc(1579px - 1px)) {
