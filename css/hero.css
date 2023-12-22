@@ -114,6 +114,7 @@
 }
 
 .hero__button-black:focus-visible {
+    outline: none;
     color: var(--pink);
     border: 1px solid var(--pink);
 }
