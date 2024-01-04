@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .hero {
     padding-bottom: 100px;
     position: relative
@@ -11,12 +18,13 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)), color-stop(66.15%, #0E0E0E));
     background: -o-linear-gradient(top, rgba(0, 0, 0, 0.00) 0%, #0E0E0E 66.15%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)), color-stop(66.15%, #0E0E0E));
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #0E0E0E 66.15%);
 }
 
 .hero__content {
+    margin-bottom: 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -52,7 +60,6 @@
 }
 
 .hero__button-group {
-    margin-bottom: 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -60,8 +67,12 @@
 }
 
 .hero__button-blue {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 18px 38px;
     background-color: var(--primary);
     border: 1px solid var(--primary);
@@ -93,8 +104,12 @@
 }
 
 .hero__button-black {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 18px 42px;
     border: 1px solid var(--white);
     border-radius: 0;
@@ -135,6 +150,12 @@
 }
 
 /* Adaptive */
+
+@media (min-width: 2030px) {
+    .hero__image {
+        background-size: contain;
+    }
+}
 
 @media (max-width: calc(1579px - 1px)) {
     .hero {
